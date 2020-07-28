@@ -21,25 +21,25 @@
 
 # How to build ESP8266 Non-OS SDK projects ?
 
-- Enter into the project directory
+## Enter into the project directory
 
 ```sh
 $ cd blink_leds/
 ```
 
-- Change the script to executable
+## Change the script to executable
 
 ```sh
 $ chmod +x gen_misc.sh
 ```
 
-- Run the gen_misc.sh script
+## Run the gen_misc.sh script
 
 ```sh
 $ ./gen_misc.sh
 ```
 
-- Give the specific options in the STEPS and flash the eagle binary to ESP8266
+## Give the specific options in the STEPS and flash the eagle binary to ESP8266
 
 ```sh
 $ ./../tools/flash_firmware.sh
