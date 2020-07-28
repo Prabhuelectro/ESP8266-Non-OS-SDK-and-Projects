@@ -6,7 +6,7 @@
 #include "user_interface.h"
 
 
-#define UART_BAUD_RATE				9600
+#define UART_BAUD_RATE				115200
 
 #define SYSTEM_PARTITION_RF_CAL_SZ              0x1000
 #define SYSTEM_PARTITION_PHY_DATA_SZ            0x1000
