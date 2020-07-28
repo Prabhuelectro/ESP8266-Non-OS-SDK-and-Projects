@@ -1,39 +1,47 @@
 # ESP8266 Non-OS SDK and Projects
 
-## blink_leds</br> 
-## Blink NodeMCU Board LED (GPIO2) at 500 Milli Seconds Delay
+## blink_leds
+- Blink NodeMCU Board LED (GPIO2) at 500 Milli Seconds Delay
 
-## dht_sensor</br>
-## DHT22 Sensor pin GPIO2 and print Temperature and Humidity in UART(Serial)
+## dht_sensor
+- DHT22 Sensor pin GPIO2 and print Temperature and Humidity in UART(Serial)
 		
-## hello_world</br>
-## Print Hello World in UART(Serial) at 1 Second Delay
+## hello_world
+- Print Hello World in UART(Serial) at 1 Second Delay
 
-## http_server</br>
-## HTTP Server with Station Mode ESP-LED 
+## http_server
+- HTTP Server with Station Mode ESP-LED 
 
-## print_mem_info</br>
-## Print ESP8266 Memory information
+## print_mem_info
+- Print ESP8266 Memory information
 
-## sdk_version</br>
-## Print ESP8266 Non-OS SDK version
+## sdk_version
+- Print ESP8266 Non-OS SDK version
 
- 
-# How to build ESP8266 Non-OS SDK projects ?</br>
 
-	## Enter into the project directory</br>
+# How to build ESP8266 Non-OS SDK projects ?
 
-	```$ cd blink_leds/```
+- Enter into the project directory
 
-	## Change the script to executable</br>
+```sh
+$ cd blink_leds/
+```
 
-	```$ chmod +x gen_misc.sh```
+- Change the script to executable
 
-	##  Run the gen_misc.sh script</br>
+```sh
+$ chmod +x gen_misc.sh
+```
 
-	```$ ./gen_misc.sh```
+- Run the gen_misc.sh script
 
-	## Give the specific options in the STEPS and flash the eagle binary to ESP8266</br>
+```sh
+$ ./gen_misc.sh
+```
 
-	```$ ./../tools/flash_firmware.sh```
+- Give the specific options in the STEPS and flash the eagle binary to ESP8266
+
+```sh
+$ ./../tools/flash_firmware.sh
+```
 
