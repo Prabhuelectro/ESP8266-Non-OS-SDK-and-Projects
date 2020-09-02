@@ -21,27 +21,55 @@
 
 # How to build ESP8266 Non-OS SDK projects ?
 
-## Enter into the project directory
+- Clone the ESPRESSIF ESP8266 NON OS SDK
+```sh
+$ git clone -b release/v3.0.0 https://github.com/espressif/ESP8266_NONOS_SDK.git
+$ cd ESP8266_NONOS_SDK
+```
+- Download and Install ESP8266 toolchain for Linux 64 Bit
+```sh
+$ wget https://dl.espressif.com/dl/xtensa-lx106-elf-linux64-1.22.0-100-ge567ec7-5.2.0.tar.gz
+$ tar xvf xtensa-lx106-elf-linux64-1.22.0-100-ge567ec7-5.2.0.tar.gz
+$ cd xtensa-lx106-elf-linux64-1.22.0-100-ge567ec7-5.2.0/bin
+$ pwd
+```
+- Copy the toolchain bin path and set in to the $PATH variable or set it permanently
+```sh
+$ exxport PATH="$PATH:/home/prabhu/workspace/ESP8266/xtensa-lx106-elf/bin"
+```
+- setting permanently by bellow
+```sh
+$ echo "PATH="$PATH:/home/prabhu/workspace/ESP8266/xtensa-lx106-elf/bin"" >> ~/.bashrc
+```
 
+- Now start to write ESP8266 Non OS SDK Programs
+
+## Enter into the project directory
 ```sh
 $ cd blink_leds/
 ```
 
 ## Change the script to executable
-
 ```sh
 $ chmod +x gen_misc.sh
 ```
 
 ## Run the gen_misc.sh script
-
+## Give the specific options in the STEPS to build binary's for ESP8266
 ```sh
 $ ./gen_misc.sh
 ```
 
-## Give the specific options in the STEPS and flash the eagle binary to ESP8266
+## How to flash Build files
+- At first time flashing ESP8266 by run the following script 
+- Adjust the script as your need the flash size and flash freqency and flash mode and PORT 
 
+```sh
+$ ./../tools/flash_default.sh
+```
+
+- Then flash the build files by
+- Adjust the script as your need the flash size and flash freqency and flash mode and PORT 
 ```sh
 $ ./../tools/flash_firmware.sh
 ```
-
