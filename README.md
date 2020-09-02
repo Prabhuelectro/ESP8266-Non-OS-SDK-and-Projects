@@ -23,8 +23,8 @@
 
 - Clone the ESPRESSIF ESP8266 NON OS SDK
 ```sh
-$ git clone -b release/v3.0.0 https://github.com/espressif/ESP8266_NONOS_SDK.git
-$ cd ESP8266_NONOS_SDK
+$ git clone https://github.com/Prabhuelectro/ESP8266-Non-OS-SDK-and-Projects.git
+$ cd ESP8266-Non-OS-SDK-and-Projects/
 ```
 - Download and Install ESP8266 toolchain for Linux 64 Bit
 ```sh
