@@ -35,7 +35,7 @@ $ pwd
 ```
 - Copy the toolchain bin path and set in to the $PATH variable or set it permanently
 ```sh
-$ exxport PATH="$PATH:/home/prabhu/workspace/ESP8266/xtensa-lx106-elf/bin"
+$ export PATH="$PATH:$PWD"
 ```
 - setting permanently by bellow
 ```sh
