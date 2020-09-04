@@ -1,11 +1,3 @@
-
-
- 
-//DHT library for the ESP8266, a port from the Adafruit library for the Arduino
-//MIT license
-//written by IoT Pipe
-
-
 #include "dht22.h"
 
 #define MIN_INTERVAL 2000
