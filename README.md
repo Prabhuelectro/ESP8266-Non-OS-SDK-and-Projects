@@ -61,15 +61,22 @@ $ ./gen_misc.sh
 ```
 
 ## How to flash Build files
-- At first time flashing ESP8266 by run the following script 
+
+- At first time flashing ESP8266 must flash the default binaries
 - Adjust the script as your need the flash size and flash freqency and flash mode and PORT 
+- In my case 4MB flash and /dev/ttyUSB0 Port
 
 ```sh
-$ ./../tools/flash_default.sh
+$ ./../tools/flash_esp8266.sh default_bin 4MB /dev/ttyUSB0
 ```
 
 - Then flash the build files by
 - Adjust the script as your need the flash size and flash freqency and flash mode and PORT 
 ```sh
-$ ./../tools/flash_firmware.sh
+$ ./../tools/flash_esp8266.sh flash_bin 4MB /dev/ttyUSB0
 ```
+
+- When using the SSL/TLS certificate 
+- See the tools/READM.md file for SSL/TLS reference
+```sh
+$ ./../tools/flash_esp8266.sh certs 4MB /dev/ttyUSB0
